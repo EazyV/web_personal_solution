@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Dimension by HTML5 UP</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="/static/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <span class="image main"><img src="/static/images/logo.png" alt=""/></span>
+        </div>
+        <div class="content">
+            <div class="innder">
+                <h1>Персональное решение</h1>
+                <p>Аутсорсинг линейного персонала для вашего бизнеса</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#customer">Заказчикам</a></li>
+                <li><a href="#applicant">Соискателям</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+
+        <!------------------------------------------------------------------------------------------------------------->
+        <!-- customer -->
+        <article id="customer">
+            <h2 class="major">Заказчикам</h2>
+            <span class="image main"><img src="/static/images/pic01.jpg" alt=""/></span>
+            <p>Компания «Персональное решение» имеет более 170 филиалов в городах России и стран СНГ и закрывает
+                потребности клиентов в линейных исполнителях: грузчиках, разнорабочих, фасовщиках, упаковщиках,
+                кассирах, промоутерах и т.д. В нашей базе более 500 000 человек, готовых выйти на ваш объект. Мы
+                контролируем их на каждом этапе: от первого выхода до сдачи работ. Поиск, подбор и оформление – наша
+                задача, вам достаточно просто сформировать заявку на необходимое количество людей.
+
+                Для быстрого поиска исполнителей мы используем систему собственного разработки для управления трудовыми
+                ресурсами — HRM 5.0. Система учитывает геолокацию и находит людей рядом с вашим объектом. А встроенный
+                робот контролирует явку..
+
+                Занимаемся аутсорсингом с 2007 года. За 16 лет помогли 8512 компаниям, сотрудничаем со всеми крупными
+                ритейлерами в стране и обеспечиваем их необходимыми исполнителями.
+
+                Мы работаем 100% «в белую» и выводим обученных, проверенных исполнителей с настоящей ЛМК, оформленных
+                официально по договору.</p>
+
+            <form class="form-back" id="form_customer" action="/message_customer" method="post">
+                <div><h3 class="form-text">Заказать звонок</h3></div>
+                <div><label class="form-text2" for="customer_name"></label>
+                    <input class="form-line" type="text" id="customer_name" name="customer_name"
+                           placeholder="Введите ваше имя" required>
+                </div>
+                <div><label class="form-text2" for="customer_phone"></label>
+                    <input class="form-line" type="tel" id="customer_phone" name="customer_phone"
+                           placeholder="Номер телефона +7(___)___-__-__" required>
+                </div>
+                <button class="button-form" id="customer_send" type="submit">Отправить</button>
+
+            </form>
+
+        </article>
+
+        <!------------------------------------------------------------------------------------------------------------->
+        <!-- applicant -->
+        <article id="applicant">
+            <h2 class="major">Соискателям</h2>
+            <span class="image fit"><img src="/static/images/pic02.jpg" alt=""/></span>
+            <ul>
+                <li>Выполняем обещания, не обещаем несбыточного и честно ведем дела</li>
+                <li>Реагируем на обращения немедленно</li>
+                <li>Все задачи четко контролируем сами и выполняем в срок</li>
+                <li>Все легально, в белую. Рабочие проверенные, оформлены официально, не придерешься</li>
+            </ul>
+            <p>Присоединяйся к нашей команде</p>
+
+            <form class="form-back" id="form_applicant" action="/message_applicant" method="post">
+                <div><h3 class="form-text">Заказать звонок</h3></div>
+                <div><label class="form-text2" for="applicant_name"></label>
+                    <input class="form-line" type="text" id="applicant_name" name="applicant_name"
+                           placeholder="Введите ваше имя" required>
+                </div>
+                <div><label class="form-text2" for="applicant_phone"></label>
+                    <input class="form-line" type="tel"  id="applicant_phone" name="applicant_phone"
+                           placeholder="Номер телефона +7(___)___-__-__" required>
+                </div>
+                <button class="button-form" id="send" type="submit">Отправить</button>
+
+            </form>
+        </article>
+        <!------------------------------------------------------------------------------------------------------------->
+        <!-- Contact -->
+        <article id="contact"><h2 class="major">Контакты</h2>
+            <ul class="contact-info">
+                <li><i class="fa fa-phone"></i> <a href="tel:89582956925">+7 (958) 295-69-25</a></li>
+                <li><i class="fa fa-envelope"></i> <a href="mailto:info@oddjob.ru">info@oddjob.ru</a></li>
+                <li><i class="fa fa-map"></i> <a>Северная 27-я, 48; 318 офис; 3 этаж</a></li>
+            </ul>
+        </article>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-button">&times;</span>
+                <h1 class="popup_text">Успешно</h1>
+                <h3 class="popup_text">Спасибо! Мы свяжемся с вами в ближайшее время!</h3>
+                <p class="popup_text2">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных
+                    данных и соглашаетесь c политикой конфиденциальности</p>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------->
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="copyright">«Персональное решение Омск» © 2020 - 2024.</p>
+    </footer>
+
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------->
+<!-- BG -->
+<div id="bg"></div>
+
+
+<!------------------------------------------------------------------------------------------------------------->
+<!-- Scripts -->
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/browser.min.js"></script>
+<script src="/static/js/breakpoints.min.js"></script>
+<script src="/static/js/util.js"></script>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/popup.js"></script>
+</body>
+
