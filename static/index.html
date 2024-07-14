@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 
 <head>
+    <link rel="icon" href="/static/images/favicon.ico">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
     <title>Dimension by HTML5 UP</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
@@ -43,27 +45,52 @@
         <article id="customer">
             <h2 class="major">Заказчикам</h2>
             <span class="image main"><img src="/static/images/pic01.jpg" alt=""/></span>
+            <h2 class="top_seven_h1">О нас</h2>
             <p>Компания «Персональное решение» имеет более 170 филиалов в городах России и стран СНГ и закрывает
-                потребности клиентов в линейных исполнителях: грузчиках, разнорабочих, фасовщиках, упаковщиках,
-                кассирах, промоутерах и т.д. В нашей базе более 500 000 человек, готовых выйти на ваш объект. Мы
-                контролируем их на каждом этапе: от первого выхода до сдачи работ. Поиск, подбор и оформление – наша
-                задача, вам достаточно просто сформировать заявку на необходимое количество людей.
-
-                Для быстрого поиска исполнителей мы используем систему собственного разработки для управления трудовыми
-                ресурсами — HRM 5.0. Система учитывает геолокацию и находит людей рядом с вашим объектом. А встроенный
-                робот контролирует явку..
-
-                Занимаемся аутсорсингом с 2007 года. За 16 лет помогли 8512 компаниям, сотрудничаем со всеми крупными
-                ритейлерами в стране и обеспечиваем их необходимыми исполнителями.
-
+                потребности клиентов в линейных исполнителях: <span class="span">грузчиках, разнорабочих, фасовщиках, упаковщиках,
+                кладовщиков, уборщиков, сборщиков заказов</span>. В нашей базе более 500 000 человек, готовых выйти на
+                ваш объект. Мы
+                контролируем их на каждом этапе: <span class="span">от первого выхода до сдачи работ</span>. Поиск,
+                подбор и оформление – наша
+                задача, вам достаточно просто сформировать заявку на необходимое количество людей.</p>
+            <p>
+                Занимаемся аутсорсингом с 2020 года. За 4 года помогли 500 компаниям, сотрудничаем со всеми крупными
+                ритейлерами в стране и обеспечиваем их необходимыми исполнителями.</p>
+            <p class="span2">
                 Мы работаем 100% «в белую» и выводим обученных, проверенных исполнителей с настоящей ЛМК, оформленных
                 официально по договору.</p>
+
+            <h2 class="top_seven_h1">7 ПРИЧИН ЗАКАЗАТЬ</h2>
+            <h2 class="top_seven_1h">АУТСОРСИНГ ПЕРСОНАЛА</h2>
+            <div class="column">
+                <ul>
+                    <li class="top_seven">ЭКОНОМИЯ</li>
+                    <li class="no-wrap">до 40% на зарплатных налогах</li>
+                    <li class="top_seven">ЭФФЕКТИВНОСТЬ</li>
+                    <li class="no-wrap">без риска простоев из-за внезапной нехватки сотрудников</li>
+                    <li class="top_seven">ЗАЩИТА</li>
+                    <li class="no-wrap">от проблем с трудовой инспекцей и УФНС</li>
+                    <li class="top_seven">ВОЗМОЖНОСТИ</li>
+                    <li class="no-wrap">наращивать штат, сохраняя УСН</li>
+                    <li class="top_seven">ОПТИМИЗАЦИЯ</li>
+                    <li class="no-wrap">нагрузки на отдел кадров и бухгалтерию</li>
+                    <li class="top_seven">НЕЗАВИСИМОСТЬ</li>
+                    <li class="no-wrap">от поиска и адаптации</li>
+                    <li class="no-wrap">людей, от юридической и эмоциональной нагрузки</li>
+                    <li class="top_seven">ГИБКОСТЬ</li>
+                    <li class="no-wrap">возможность законно привлекать людей на временную работу без оформления</li>
+                </ul>
+            </div>
 
             <form class="form-back" id="form_customer" action="/message_customer" method="post">
                 <div><h3 class="form-text">Заказать звонок</h3></div>
                 <div><label class="form-text2" for="customer_name"></label>
                     <input class="form-line" type="text" id="customer_name" name="customer_name"
-                           placeholder="Введите ваше имя" required>
+                           placeholder="Имя" required>
+                </div>
+                <div><label class="form-text2" for="customer_email"></label>
+                    <input class="form-line" type="email" id="customer_email" name="customer_email"
+                           placeholder="E-mail" required>
                 </div>
                 <div><label class="form-text2" for="customer_phone"></label>
                     <input class="form-line" type="tel" id="customer_phone" name="customer_phone"
@@ -92,10 +119,10 @@
                 <div><h3 class="form-text">Заказать звонок</h3></div>
                 <div><label class="form-text2" for="applicant_name"></label>
                     <input class="form-line" type="text" id="applicant_name" name="applicant_name"
-                           placeholder="Введите ваше имя" required>
+                           placeholder="Имя" required>
                 </div>
                 <div><label class="form-text2" for="applicant_phone"></label>
-                    <input class="form-line" type="tel"  id="applicant_phone" name="applicant_phone"
+                    <input class="form-line" type="tel" id="applicant_phone" name="applicant_phone"
                            placeholder="Номер телефона +7(___)___-__-__" required>
                 </div>
                 <button class="button-form" id="send" type="submit">Отправить</button>
@@ -109,6 +136,11 @@
                 <li><i class="fa fa-phone"></i> <a href="tel:89582956925">+7 (958) 295-69-25</a></li>
                 <li><i class="fa fa-envelope"></i> <a href="mailto:info@oddjob.ru">info@oddjob.ru</a></li>
                 <li><i class="fa fa-map"></i> <a>Северная 27-я, 48; 318 офис; 3 этаж</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://t.me/persresh" class="icon brands fa-telegram"><span class="label">telegram</span></a></li>
+                <li><a href="#" class="icon brands fa-vk"><span class="label">vk</span></a></li>
+
             </ul>
         </article>
 

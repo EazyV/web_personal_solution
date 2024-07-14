@@ -33,12 +33,13 @@ async def register(applicant_name=Form(), applicant_phone=Form()):
 
 
 @app.post("/message_customer")
-async def register(customer_name=Form(), customer_phone=Form()):
+async def register(customer_name=Form(), customer_phone=Form(), customer_email=Form()):
     lead_data = {
         "fields":
             {"TITLE": "Новый лид Заказчик ",
              "NAME": customer_name,
              "PHONE": [{"VALUE": customer_phone, "VALUE_TYPE": "WORK"}],
+             "EMAIL": [{"VALUE": customer_email, "VALUE_TYPE": "WORK"}],
              "SOURCE_ID": "WEBFORM",
              "ASSIGNED_BY_ID": 1}}
     user.create_lead(lead_data)

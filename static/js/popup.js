@@ -45,11 +45,6 @@ submitButton2.addEventListener('click', function (event) {
 });
 
 
-
-
-
-
-
 document.querySelector('#applicant_phone').onkeydown = function (e) {
     inputphone(e, document.querySelector('#applicant_phone'))
 }

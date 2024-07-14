@@ -193,7 +193,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
     border-bottom: solid 1px #ffffff;
     padding-bottom: 0.5rem;
-    margin: 0 0 2rem 0;
+    text-align: center;
+    margin-top: -50px;
 }
 
 .center_top {
@@ -1698,7 +1699,8 @@ body.is-preload #footer {
     font-weight: bold;
     position: absolute;
     top: 0;
-    left: 430px;
+    right: 30px;
+
 }
 
 .close-button:hover,
@@ -1708,7 +1710,8 @@ body.is-preload #footer {
     cursor: pointer;
     position: absolute;
     top: 0;
-    left: 430px;
+    right: 30px;
+
 }
 
 .popup_text {
@@ -1728,14 +1731,14 @@ body.is-preload #footer {
 }
 
 .form-back {
-    background-color: rgba(255, 255, 255, 0.94);
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;
     font-size: 16px;
-    width: 100%;
+    width: 60%;
     box-sizing: border-box;
     flex-direction: column;
-
 
 }
 
@@ -1745,6 +1748,7 @@ body.is-preload #footer {
     font-family: "Source Sans Pro", sans-serif;
     text-align: center;
     margin-bottom: 40px;
+    font-style: normal;
 }
 
 .form-text2 {
@@ -1763,7 +1767,7 @@ body.is-preload #footer {
     border: 1px solid #0c0909;
     border-radius: 10px;
     color: #000000;
-    background-color: #fffdfd;
+    background-color: rgba(185, 185, 185, 0.85);
 }
 
 .form-line:required:focus {
@@ -1774,10 +1778,10 @@ body.is-preload #footer {
     border-radius: 10px;
     font-size: 16px;
     color: #111111;
-    background-color: #e3e2e2;
+    background-color: #d0cece;
 }
 
-.form-line::placeholder  {
+.form-line::placeholder {
     font-size: larger;
     font-family: "Source Sans Pro", sans-serif;
     color: rgba(0, 0, 0, 0.5) !important;
@@ -1787,11 +1791,57 @@ body.is-preload #footer {
 .form-back button {
     background-color: #464646;
     display: block;
-    margin-left: 32%;
-    margin-top: 20px;
     border-radius: 10px;
+    margin: 0 auto;
 }
+
 .form-back button:hover {
     background-color: #2f2f2f;
     border-radius: 10px;
 }
+
+.top_seven_h1 {
+    text-align: center;
+}
+.top_seven_1h {
+    text-align: center;
+    color: #91a3f6;
+}
+
+.top_seven {
+    color: #91a3f6;
+    font-size: large;
+    list-style-type: none;
+
+}
+
+.no-wrap {
+    list-style-type: none;
+}
+.span {
+    color: #91a3f6;
+    font-style: oblique;
+}
+.span2 {
+    color: #91a3f6;
+}
+.contact-info {
+    font-size: large;
+}
+
+.column {
+    -webkit-column-width: 220px;
+    -moz-column-width: 220px;
+    column-width: 220px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 70px;
+    -moz-column-gap: 70px;
+    column-gap: 70px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+    margin-bottom: 25px;
+    text-align: match-parent;
+   }
