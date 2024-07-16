@@ -13,6 +13,9 @@ submitButton.addEventListener('click', function (event) {
         // Если поля не заполнены, выводим сообщение об ошибке
         alert('Пожалуйста, заполните все поля формы.');
     }
+    form.style.display = 'none';
+    form.style.bottom = "-300px";
+    button_show2.style.display = "block"
 });
 
 closeButton.addEventListener('click', function () {
@@ -42,6 +45,9 @@ submitButton2.addEventListener('click', function (event) {
         // Если поля не заполнены, выводим сообщение об ошибке
         alert('Пожалуйста, заполните все поля формы.');
     }
+    form2.style.display = 'none';
+    form2.style.bottom = "-300px";
+    button_show.style.display = "block"
 });
 
 
@@ -110,3 +116,19 @@ function inputphone(e, phone) {
         stop(e)
     }
 }
+
+const button_show = document.getElementById('button_show');
+const button_show2 = document.getElementById('button_show2');
+button_show.addEventListener('click', function () {
+    form2.style.display = 'block';
+    form2.style.bottom = "0";
+    button_show.style.display = "none"
+
+});
+
+button_show2.addEventListener('click', function () {
+    form.style.display = 'block';
+    form.style.bottom = "0";
+    button_show2.style.display = "none"
+
+});

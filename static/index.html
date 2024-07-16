@@ -23,7 +23,7 @@
         </div>
         <div class="content">
             <div class="innder">
-                <h1>Персональное решение</h1>
+                <h1><span class="pr_color">Персональное</span> <span class="pr_color2">РЕШЕНИЕ</span></h1>
                 <p>Аутсорсинг линейного персонала для вашего бизнеса</p>
             </div>
         </div>
@@ -48,7 +48,7 @@
             <h2 class="top_seven_h1">О нас</h2>
             <p>Компания «Персональное решение» имеет более 170 филиалов в городах России и стран СНГ и закрывает
                 потребности клиентов в линейных исполнителях: <span class="span">грузчиках, разнорабочих, фасовщиках, упаковщиках,
-                кладовщиков, уборщиков, сборщиков заказов</span>. В нашей базе более 500 000 человек, готовых выйти на
+                кладовщиков, уборщиков, сборщиков заказов</span>. В нашей базе более 30 000 человек, готовых выйти на
                 ваш объект. Мы
                 контролируем их на каждом этапе: <span class="span">от первого выхода до сдачи работ</span>. Поиск,
                 подбор и оформление – наша
@@ -83,7 +83,6 @@
             </div>
 
             <form class="form-back" id="form_customer" action="/message_customer" method="post">
-                <div><h3 class="form-text">Заказать звонок</h3></div>
                 <div><label class="form-text2" for="customer_name"></label>
                     <input class="form-line" type="text" id="customer_name" name="customer_name"
                            placeholder="Имя" required>
@@ -99,7 +98,8 @@
                 <button class="button-form" id="customer_send" type="submit">Отправить</button>
 
             </form>
-
+            <button class="button_show" id="button_show"><span class="pr_color">Заказать</span> <span class="pr_color2">звонок</span>
+            </button>
         </article>
 
         <!------------------------------------------------------------------------------------------------------------->
@@ -107,16 +107,34 @@
         <article id="applicant">
             <h2 class="major">Соискателям</h2>
             <span class="image fit"><img src="/static/images/pic02.jpg" alt=""/></span>
+            <h2 class="top_seven_h1">Почему стоит <span class="pr_color2">выбрать нас?</span></h2>
             <ul>
-                <li>Выполняем обещания, не обещаем несбыточного и честно ведем дела</li>
-                <li>Реагируем на обращения немедленно</li>
-                <li>Все задачи четко контролируем сами и выполняем в срок</li>
-                <li>Все легально, в белую. Рабочие проверенные, оформлены официально, не придерешься</li>
+                <li>Мы предлагаем стабильную работу с официальным оформлением и своевременной выплатой заработной
+                    платы.
+                </li>
+                <li>Наши клиенты - крупные, надежные компании, которые ценят профессионализм и ответственность.</li>
+                <li>Мы заботимся о карьерном росте сотрудников и предоставляем возможности для развития.</li>
+                <li>Наша команда - это дружный коллектив единомышленников, которые всегда готовы помочь и поддержать.
+                </li>
             </ul>
-            <p>Присоединяйся к нашей команде</p>
+
+            <h2 class="top_seven_h1">Вакансии</h2>
+            <ul>
+                <li>Мы предлагаем вакансии для линейного персонала в различных сферах: торговля, производство,
+                    логистика, сфера услуг и др.
+                </li>
+                <li>Рабочие специальности: <span class="span3">грузчик, разнорабочий, фасовщик, упаковщик,
+                кладовщик, уборщик, сборщик заказов</span>.
+                </li>
+                <li>Если вы не нашли подходящую вакансию, закажите звонок, и мы обязательно свяжемся с вами.
+                </li>
+            </ul>
+            <p>Мы ждем активных, целеустремленных и ответственных соискателей, готовых стать частью нашей команды
+                профессионалов.</p>
+            <h3 class="pr"><span class="pr_color">Присоединяйся к</span> <span class="pr_color2">нашей команде</span>
+            </h3>
 
             <form class="form-back" id="form_applicant" action="/message_applicant" method="post">
-                <div><h3 class="form-text">Заказать звонок</h3></div>
                 <div><label class="form-text2" for="applicant_name"></label>
                     <input class="form-line" type="text" id="applicant_name" name="applicant_name"
                            placeholder="Имя" required>
@@ -128,7 +146,10 @@
                 <button class="button-form" id="send" type="submit">Отправить</button>
 
             </form>
+            <button class="button_show" id="button_show2"><span class="pr_color">Заказать</span> <span
+                    class="pr_color2">звонок</span></button>
         </article>
+
         <!------------------------------------------------------------------------------------------------------------->
         <!-- Contact -->
         <article id="contact"><h2 class="major">Контакты</h2>
@@ -138,7 +159,8 @@
                 <li><i class="fa fa-map"></i> <a>Северная 27-я, 48; 318 офис; 3 этаж</a></li>
             </ul>
             <ul class="icons">
-                <li><a href="https://t.me/persresh" class="icon brands fa-telegram"><span class="label">telegram</span></a></li>
+                <li><a href="https://t.me/persresh" class="icon brands fa-telegram"><span class="label">telegram</span></a>
+                </li>
                 <li><a href="#" class="icon brands fa-vk"><span class="label">vk</span></a></li>
 
             </ul>
