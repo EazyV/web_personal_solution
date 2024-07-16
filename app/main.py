@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from . import BitrixClient
 from starlette.status import HTTP_204_NO_CONTENT
 import json
-import uvicorn
+
 
 app = FastAPI()
 app.mount('/static', StaticFiles(directory='static'), name='static')
@@ -12,10 +12,10 @@ app.mount('/static', StaticFiles(directory='static'), name='static')
 
 @app.get('/')
 async def read_root():
-    return HTMLResponse(content=open('../static/index.html', 'r', encoding="utf_8").read(), media_type='text/html')
+    return HTMLResponse(content=open('static/index.html', 'r', encoding="utf_8").read(), media_type='text/html')
 
 
-with open('/app/tok.json', 'r') as file:
+with open('app/tok.json', 'r') as file:
     data = json.load(file)
 user = BitrixClient(data["token"])
 
@@ -46,6 +46,3 @@ async def register(customer_name=Form(), customer_phone=Form(), customer_email=F
     user.create_lead(lead_data)
     raise HTTPException(status_code=HTTP_204_NO_CONTENT)
 
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
