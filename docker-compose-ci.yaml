@@ -1,4 +1,10 @@
 version: "3.8"
+
+networks:
+ custom:
+  name: custom
+
+
 services:
 
   # nginx service
@@ -13,16 +19,15 @@ services:
       - ./nginx:/etc/nginx/conf.d
     networks:
       - custom
-    restart: always
 
   # application service
   app:
-    container_name: "my_project_app"
+    container_name: "app"
     image: app
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8000:80"
+      - "8000:8000"
     networks:
       - custom
