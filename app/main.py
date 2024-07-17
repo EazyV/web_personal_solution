@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from . import BitrixClient
 from starlette.status import HTTP_204_NO_CONTENT
 import json
-
+import re
 
 app = FastAPI()
 app.mount('/static', StaticFiles(directory='static'), name='static')
@@ -34,15 +34,20 @@ async def register(applicant_name=Form(), applicant_phone=Form()):
 
 
 @app.post("/message_customer")
-async def register(customer_name=Form(), customer_phone=Form(), customer_email=Form()):
+async def register(customer_email=Form(), customer_name=Form(), customer_phone=Form()):
     lead_data = {
-        "fields":
-            {"TITLE": "Новый лид Заказчик ",
-             "NAME": customer_name,
-             "PHONE": [{"VALUE": customer_phone, "VALUE_TYPE": "WORK"}],
-             "EMAIL": [{"VALUE": customer_email, "VALUE_TYPE": "WORK"}],
-             "SOURCE_ID": "WEBFORM",
-             "ASSIGNED_BY_ID": 1}}
+        "fields": {
+            "TITLE": "Новый лид Заказчик",
+            "NAME": customer_name,
+            "PHONE": [{"VALUE": customer_phone, "VALUE_TYPE": "WORK"}],
+            "SOURCE_ID": "WEBFORM",
+            "ASSIGNED_BY_ID": 1
+        }
+    }
+
+    if customer_email and not customer_email.isspace() and re.match(r'^[\w\.-]+@[\w\.-]+\.\w+$',
+                                                                    customer_email):
+        lead_data["fields"]["EMAIL"] = [{"VALUE": customer_email, "VALUE_TYPE": "WORK"}]
+
     user.create_lead(lead_data)
     raise HTTPException(status_code=HTTP_204_NO_CONTENT)
-
