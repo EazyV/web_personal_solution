@@ -1,6 +1,22 @@
 <!DOCTYPE HTML>
 
 <head>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(97946750, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/97946750" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
     <link rel="icon" href="/static/images/favicon.ico">
     <link rel="shortcut icon" href="/static/images/favicon.ico">
     <title>Персональное решение</title>
@@ -10,23 +26,6 @@
     <noscript>
         <link rel="stylesheet" href="/static/css/noscript.css"/>
     </noscript>
-
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(97946750, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/97946750" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </head>
 <body class="is-preload">
 
@@ -109,7 +108,7 @@
                            placeholder="E-mail" required>
                 </div>
                 <div><label class="form-text2" for="customer_phone"></label>
-                    <input class="form-line" type="tel" id="customer_phone" name="customer_phone"
+                    <input class="form-line" type="text" id="customer_phone" name="customer_phone"
                            placeholder="Номер телефона +7(___)___-__-__" required>
                 </div>
                 <button class="button-form" id="customer_send" type="submit">Отправить</button>
